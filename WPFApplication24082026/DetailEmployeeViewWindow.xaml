@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPFApplication24082026.DetailEmployeeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApplication24082026"
+        mc:Ignorable="d" ResizeMode="NoResize"
+        Title="Детализация(просмотр) строки таблицы Сотрудники" Height="400" Width="400">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" FontWeight="Bold" Target="{Binding ElementName=NameDetailV}">Наименование</Label>
+        <TextBox IsReadOnly="True" Grid.Row="1" Name="NameTextVDetail" MinWidth="250">Наименование</TextBox>
+        <Label Grid.Row="2" FontWeight="Bold" Target="{Binding ElementName=SpecificationVDetail}">Спецификация</Label>
+        <TextBox IsReadOnly="True" Grid.Row="3" Name="SpecificationVDetail" MinWidth="250">Спецификация</TextBox>
+        <Label Grid.Row="4" FontWeight="Bold" Target="{Binding ElementName=CategoryVDetail}">Категория</Label>
+        <TextBox IsReadOnly="True" Grid.Row="5" Name="CategoryVDetail" MinWidth="250">Категория</TextBox>
+        <Label Grid.Row="6" FontWeight="Bold" Target="{Binding ElementName=PriceVDetail}">Цена:</Label>
+        <TextBox IsReadOnly="True" Grid.Row="7" Name="PriceVDetail" MinWidth="250">Цена</TextBox>
+        <Label Grid.Row="8" FontWeight="Bold" Target="{Binding ElementName=DescriptionVDetail}">Описание</Label>
+        <TextBox IsReadOnly="True" Grid.Row="9" Name="DescriptionVDetail" MinWidth="250">Описание</TextBox>
+        <Label Grid.Row="10" FontWeight="Bold" Target="{Binding ElementName=AddressVDetail}">Адрес</Label>
+        <TextBox IsReadOnly="True" Grid.Row="11" Name="AddressVDetail" MinWidth="250">Адрес</TextBox>        
+    </Grid>
+</Window>
